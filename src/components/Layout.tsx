@@ -7,100 +7,55 @@ import { StyleProvider } from "@/components/ui/StyleProvider";
 
 export default function Layout() {
   const navItems = [
-  {
-    "name": "Home",
-    "href": "#hero"
-  },
-  {
-    "name": "Collections",
-    "href": "#products"
-  },
-  {
-    "name": "About",
-    "href": "#about"
-  },
-  {
-    "name": "Testimonials",
-    "href": "#testimonials"
-  },
-  {
-    "name": "Features",
-    "href": "#features"
-  },
-  {
-    "name": "Pricing",
-    "href": "#pricing"
-  },
-  {
-    "name": "Metrics",
-    "href": "#metrics"
-  }
-];
+    { name: "Home", href: "#hero" },
+    { name: "Menu", href: "#products" },
+    { name: "About", href: "#about" },
+    { name: "Reviews", href: "#testimonials" },
+    { name: "Location", href: "#contact" }
+  ];
 
   return (
     <StyleProvider buttonVariant="arrow" siteBackground="noise" heroBackground="lightRaysCenter">
       <SiteBackgroundSlot />
       <SectionErrorBoundary name="navbar">
         <NavbarCentered
-      logo="Attaboy | أتابوي"
-      ctaButton={{
-        text: "Order Online",
-        href: "https://linktr.ee",
-      }}
-     navItems={[
-       { name: "Home", href: "#hero" },
-       { name: "Menu", href: "#products" },
-       { name: "About", href: "#about" },
-       { name: "Reviews", href: "#testimonials" },
-       { name: "Location", href: "#contact" }
-     ]} />
+          logo="Attaboy | أتابوي"
+          ctaButton={{
+            text: "Order Online",
+            href: "https://linktr.ee",
+          }}
+          navItems={navItems}
+        />
       </SectionErrorBoundary>
       <main className="flex-grow">
         <Outlet />
       </main>
       <SectionErrorBoundary name="footer">
         <FooterSimple
-      brand="CALI GLOW"
-      columns={[
-        {
-          title: "Company",
-          items: [
+          brand="Attaboy | أتابوي"
+          columns={[
             {
-              label: "About Us",
-              href: "#",
+              title: "Quick Links",
+              items: [
+                { label: "Home", href: "#hero" },
+                { label: "Menu", href: "#products" },
+                { label: "About", href: "#about" },
+              ],
             },
             {
-              label: "Sustainability",
-              href: "#",
+              title: "Visit Us",
+              items: [
+                { label: "Hira Street, Al Marwah", href: "#contact" },
+                { label: "Jeddah, Saudi Arabia", href: "#contact" },
+              ],
             },
-          ],
-        },
-        {
-          title: "Support",
-          items: [
-            {
-              label: "Contact",
-              href: "#",
-            },
-            {
-              label: "FAQs",
-              href: "#",
-            },
-          ],
-        },
-      ]}
-      copyright="© 2024 Cali Glow Skincare. All rights reserved."
-      links={[
-        {
-          label: "Privacy Policy",
-          href: "#",
-        },
-        {
-          label: "Terms of Service",
-          href: "#",
-        },
-      ]}
-    />
+          ]}
+          copyright="© 2024 Attaboy Restaurant. All rights reserved."
+          links={[
+            { label: "Privacy Policy", href: "#" },
+            { label: "Terms of Service", href: "#" },
+          ]}
+        />
       </SectionErrorBoundary>
     </StyleProvider>
   );
