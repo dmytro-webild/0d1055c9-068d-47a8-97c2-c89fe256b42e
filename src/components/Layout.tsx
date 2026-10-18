@@ -42,12 +42,18 @@ export default function Layout() {
       <SiteBackgroundSlot />
       <SectionErrorBoundary name="navbar">
         <NavbarCentered
-      logo="CALI GLOW"
+      logo="Attaboy | أتابوي"
       ctaButton={{
-        text: "Shop Now",
-        href: "#products",
+        text: "Order Online",
+        href: "https://linktr.ee",
       }}
-     navItems={navItems} />
+     navItems={[
+       { name: "Home", href: "#hero" },
+       { name: "Menu", href: "#products" },
+       { name: "About", href: "#about" },
+       { name: "Reviews", href: "#testimonials" },
+       { name: "Location", href: "#contact" }
+     ]} />
       </SectionErrorBoundary>
       <main className="flex-grow">
         <Outlet />
