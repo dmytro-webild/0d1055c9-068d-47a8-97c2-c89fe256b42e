@@ -7,11 +7,12 @@ import { StyleProvider } from "@/components/ui/StyleProvider";
 
 export default function Layout() {
   const navItems = [
-    { name: "Home", href: "#hero" },
-    { name: "Menu", href: "#products" },
-    { name: "About", href: "#about" },
-    { name: "Reviews", href: "#testimonials" },
-    { name: "Location", href: "#contact" }
+    { name: "الرئيسية", href: "#hero" },
+    { name: "عن المصنع", href: "#about" },
+    { name: "منتجاتنا", href: "#products" },
+    { name: "المميزات", href: "#features" },
+    { name: "آراء العملاء", href: "#testimonials" },
+    { name: "اتصل بنا", href: "#contact" }
   ];
 
   return (
@@ -19,10 +20,10 @@ export default function Layout() {
       <SiteBackgroundSlot />
       <SectionErrorBoundary name="navbar">
         <NavbarCentered
-          logo="Attaboy | أتابوي"
+          logo="شركة المتولي للمنتجات الفولاذية"
           ctaButton={{
-            text: "Order Online",
-            href: "https://linktr.ee",
+            text: "تواصل معنا",
+            href: "tel:0126369088",
           }}
           navItems={navItems}
         />
@@ -32,28 +33,30 @@ export default function Layout() {
       </main>
       <SectionErrorBoundary name="footer">
         <FooterSimple
-          brand="Attaboy | أتابوي"
+          brand="مصنع شركة المتولي للمنتجات الفولاذية"
           columns={[
             {
-              title: "Quick Links",
+              title: "روابط سريعة",
               items: [
-                { label: "Home", href: "#hero" },
-                { label: "Menu", href: "#products" },
-                { label: "About", href: "#about" },
+                { label: "الرئيسية", href: "#hero" },
+                { label: "عن المصنع", href: "#about" },
+                { label: "منتجات الفولاذ", href: "#products" },
+                { label: "التسهيلات الماليّة", href: "#pricing" },
               ],
             },
             {
-              title: "Visit Us",
+              title: "الموقع والتواصل",
               items: [
-                { label: "Hira Street, Al Marwah", href: "#contact" },
-                { label: "Jeddah, Saudi Arabia", href: "#contact" },
+                { label: "حي الجوهرة، جدة 22426", href: "#contact" },
+                { label: "هاتف: 0126369088", href: "tel:0126369088" },
+                { label: "الموقع: msp.com.sa", href: "https://msp.com.sa" },
               ],
             },
           ]}
-          copyright="© 2024 Attaboy Restaurant. All rights reserved."
+          copyright="© 2025 مصنع شركة المتولي للمنتجات الفولاذية. جميع الحقوق محفوظة."
           links={[
-            { label: "Privacy Policy", href: "#" },
-            { label: "Terms of Service", href: "#" },
+            { label: "سياسة الخصوصية", href: "#" },
+            { label: "الشروط والأحكام", href: "#" },
           ]}
         />
       </SectionErrorBoundary>

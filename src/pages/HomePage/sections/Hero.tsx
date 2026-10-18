@@ -10,12 +10,12 @@ export default function HeroSection(): React.JSX.Element {
     <div id="hero" data-section="hero">
         <SectionErrorBoundary name="hero">
               <HeroBillboardCarousel
-        tag="Al Marwah, Jeddah • Fast Food"
-        title="Attaboy (أتابوي) Fast Food"
-        description="Delicious, mouth-watering fast food in Al Marwah, Jeddah. Taste our famous Butter Chicken Burger, Spicy Chicken Wrap, Burritos, and Club Sandwiches!"
-        primaryButton={{"href":"#products","text":"View Menu"}}
-        secondaryButton={{"text":"Get Directions","href":"#contact"}}
-        items={[{"imageSrc":"https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=80"},{"imageSrc":"https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=1200&q=80"},{"imageSrc":"https://images.unsplash.com/photo-1521305916504-4a1121188589?auto=format&fit=crop&w=1200&q=80"},{"imageSrc":"https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&q=80"}]}
+        tag="جدة - حي الجوهرة | تقييم 4.7 ⭐ (32 مراجعة)"
+        title="مصنع شركة المتولي للمنتجات الفولاذية"
+        description="مصنع رائد في توريد وبيع الحديد التجاري والفولاذ بكل أشكاله في جدة، مع توفير خيارات البيع الآجل وتسهيلات متميزة للشركات والمشاريع."
+        primaryButton={{"text":"استكشف المنتجات","href":"#products"}}
+        secondaryButton={{"text":"تواصل معنا","href":"#contact"}}
+        items={[{"imageSrc":"https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80"},{"imageSrc":"https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?auto=format&fit=crop&w=1200&q=80"},{"imageSrc":"https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80"}]}
         textAnimation="fade-blur"
       />
         </SectionErrorBoundary>
