@@ -10,28 +10,28 @@ import { cls } from "@/lib/utils";
 
 const testimonials = [
   {
-    name: "نواف العتيبي",
-    role: "Food Critic & Journalist",
-    company: "Jeddah Eats",
+    name: "يوسف الغامدي",
+    role: "عميل - 7 مراجعات",
+    company: "مصنع المتولي للفولاذ",
     imageSrc: "https://picsum.photos/seed/963130516/1200/800",
     rating: 5,
-    quote: "مطعم كويس يستاهل التجربة. خدمنا الموظف نواف تعامل راقي صراحة اشكره!"
+    quote: "من المصانع التي توفر بيع الأجل للحديد التجاري بكل أشكاله . ولي تجارب معه جميله .."
   },
   {
-    name: "همَّام الغامدي",
-    role: "Senior Food Blogger",
-    company: "Jeddah Food Guide",
+    name: "print code",
+    role: "عميل",
+    company: "جدة",
     imageSrc: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
     rating: 5,
-    quote: "الأكل مره رهيب والبوريتو جدًا جامد وأطلق شيء عندهم والموظفين أسلوبهم راقي ومحترم جدًا يعطيهم العافية."
+    quote: "امكانيات جبارة وتعامل راقي، شكرا أستاذ سلطان الحربي 🙏🏻"
   },
   {
-    name: "Eng. Abdulaziz Al-Harbi",
-    role: "Operations Manager",
-    company: "Jeddah Tech Hub",
+    name: "Eng m Mos",
+    role: "مرشد محلي - Local Guide",
+    company: "جدة",
     imageSrc: "https://picsum.photos/seed/317638357/1200/800",
     rating: 5,
-    quote: "المكان مرتب و نظيف و تعامل الموظفين رائع كانت اول تجربة لنا و ماقصروا عرفونا على المنيو، المطعم فيه جلسات داخلية بسيطة."
+    quote: "تجربة ممتازة مع الموظف سلطان الحربي مشكور على تعاونه مع العملاء"
   }
 ];
 
@@ -61,7 +61,7 @@ const TestimonialsInline = () => {
           />
 
           <TextAnimation
-            text={"Rated 4.5 ⭐ (200+ reviews) on Google Maps. Here is what our customers in Jeddah say about us!"}
+            text={"Rated 4.7 ⭐ (32 reviews) on Google Maps. Here is what our clients say about Al-Metwally Steel Products Factory!"}
             variant={"fade-blur"}
             gradientText={false}
             tag="p"
